@@ -1,0 +1,6 @@
+{
+  "name": "Helioski",
+  "description": "Helioski - A modern, interactive skincare hero section with mouse scrubbing video playback, bespoke typewriter animation, and custom skincare select pills.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
