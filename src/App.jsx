@@ -1,6 +1,11 @@
+import BlogSection from "./BlogSection";
 import Home from "./Home";
+
 export default function App() {
-  // Mobile menu visibility state
-    return <Home />;
-  
+  return (
+    <>
+      <Home />
+      <BlogSection />
+    </>
+  );
 }
