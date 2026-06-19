@@ -1,8 +1,8 @@
 import { ArrowRight, Check } from 'lucide-react';
 import { AnimatePresence, motion } from 'motion/react';
 import { useEffect, useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { useTypewriter } from "./hooks/useTypewriter";
-
 export default function Home() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [selectedServices, setSelectedServices] = useState([]);
@@ -122,7 +122,10 @@ export default function Home() {
         <nav className="hidden md:flex flex-row items-center text-[22px] text-black font-normal font-sans">
           <a href="#home" className="hover:opacity-60 transition-opacity">Home</a>
           <span className="opacity-40 select-none">&nbsp;,&nbsp;</span>
-          <a href="#ai" className="hover:opacity-60 transition-opacity">AI</a>
+         
+       <Link to="/skinai">
+         <p className="hover:opacity-60 transition-opacity"> ai</p>
+       </Link>
           <span className="opacity-40 select-none">&nbsp;,&nbsp;</span>
           <a href="#contact" className="hover:opacity-60 transition-opacity">Contact</a>
           <span className="opacity-40 select-none">&nbsp;,&nbsp;</span>
